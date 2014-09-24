@@ -8,7 +8,7 @@ exports.template = function(grunty, init, complete){
 		init.prompt("author_name"),
 		init.prompt("author_url")
 	], function(err, props){
-		var files = initFilesToCopy(props);
+		var files = init.filesToCopy(props);
 
 		init.copyAndProcess(files, props);
 		init.writePackageJSON("[package.json", {
