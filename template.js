@@ -11,7 +11,7 @@ exports.template = function(grunty, init, complete){
 		var files = init.filesToCopy(props);
 
 		init.copyAndProcess(files, props);
-		init.writePackageJSON("[package.json", {
+		init.writePackageJSON("package.json", {
 			name: props.name,
 			version: props.version,
 			description: props.description,
